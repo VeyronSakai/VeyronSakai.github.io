@@ -1,35 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import icon from "./assets/icon.png";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="min-h-screen bg-slate-900">
+      {/* Header */}
+      <header className="fixed top-0 left-4 right-4 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-700/50">
+        <div className="max-w-full mx-auto px-6 py-4">
+          <div className="flex items-center justify-between">
+            {/* Logo */}
+            <img
+              src={icon}
+              alt="Logo"
+              className="w-10 h-10 rounded-full object-cover"
+            />
+
+            {/* Navigation */}
+            <nav className="flex items-center gap-8">
+              <a
+                href="#japanese"
+                className="text-sm font-medium text-slate-300 hover:text-indigo-400 transition-colors duration-300"
+              >
+                日本語
+              </a>
+              <a
+                href="#english"
+                className="text-sm font-medium text-slate-300 hover:text-indigo-400 transition-colors duration-300"
+              >
+                English
+              </a>
+            </nav>
+          </div>
+        </div>
+      </header>
+    </div>
+  );
 }
 
-export default App
+export default App;
