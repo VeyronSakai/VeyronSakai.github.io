@@ -23,8 +23,13 @@ function App() {
                             name="Yuki Sakai"
                             role="Software Engineer"
                             avatarSrc={icon}
+                            location="日本"
+                            gender="男性"
+                            skills={["Unity", "C#", "TypeScript", "React", "Go", "Rust"]}
                             githubUrl="https://github.com/VeyronSakai"
                             xUrl="https://x.com/VeyronSakai"
+                            zennUrl="https://zenn.dev/veryon_sakai"
+                            qiitaUrl="https://qiita.com/VeyronSakai"
                         />
                     </div>
                 </section>
