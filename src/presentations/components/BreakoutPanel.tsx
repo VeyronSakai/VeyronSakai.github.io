@@ -1,11 +1,11 @@
-import { breakoutConfig } from "@/domains/breakouts/config";
-import { useBreakoutGame } from "@/useCases/breakouts/useBreakoutGame";
+import {breakoutConfig} from "@/domains/breakouts/config";
+import {useBreakoutGame} from "@/useCases/breakouts/useBreakoutGame";
 
 export const BreakoutPanel = () => {
-    const { canvasRef, score, statusLabel } = useBreakoutGame();
+    const {canvasRef, score, statusLabel} = useBreakoutGame();
 
     return (
-        <div className="w-full max-w-md lg:w-[420px]">
+        <div className="w-full max-w-md lg:w-105">
             {/* w-full: 幅100%, max-w-md: 最大幅28rem, lg:w-[420px]: lgで幅420px */}
             <div className="rounded-2xl border border-slate-700/60 bg-slate-800/40 p-4 shadow-lg shadow-indigo-500/10">
                 {/*
@@ -48,7 +48,7 @@ export const BreakoutPanel = () => {
                         text-slate-400: 文字色 slate-400
                     */}
                     <span>操作: ← → / A D</span>
-                    <span>Spaceで再開</span>
+                    <span>P/Escでポーズ</span>
                     <span className="text-indigo-300">{statusLabel}</span>
                     {/* text-indigo-300: 文字色 indigo-300 */}
                 </div>

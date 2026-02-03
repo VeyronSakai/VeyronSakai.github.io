@@ -1,4 +1,4 @@
-export type GameStatus = "playing" | "won" | "lost";
+export type GameStatus = "playing" | "paused" | "won" | "lost";
 
 export type Direction = -1 | 1;
 
