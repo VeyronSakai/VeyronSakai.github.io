@@ -1,12 +1,12 @@
-import type { ReactNode } from "react";
+import type {ReactNode} from "react";
 
 type SocialLinkProps = {
     href: string;
-    label: string;
+    label?: string;
     children: ReactNode;
 };
 
-export const SocialLink = ({ href, label, children }: SocialLinkProps) => {
+export const SocialLink = ({href, label, children}: SocialLinkProps) => {
     return (
         <a
             href={href}
@@ -29,6 +29,7 @@ export const SocialLink = ({ href, label, children }: SocialLinkProps) => {
                 duration-300: 300ms
             */}
             {children}
+
             <span>{label}</span>
         </a>
     );

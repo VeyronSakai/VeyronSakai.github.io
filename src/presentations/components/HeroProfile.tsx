@@ -1,4 +1,4 @@
-import { SocialLink } from "@/presentations/components/SocialLink";
+import {SocialLink} from "@/presentations/components/SocialLink";
 
 type HeroProfileProps = {
     name: string;
@@ -8,9 +8,9 @@ type HeroProfileProps = {
     xUrl: string;
 };
 
-export const HeroProfile = ({ name, role, avatarSrc, githubUrl, xUrl }: HeroProfileProps) => {
+export const HeroProfile = ({name, role, avatarSrc, githubUrl, xUrl}: HeroProfileProps) => {
     return (
-        <div className="flex w-full max-w-xl flex-col items-center text-center lg:items-start lg:text-left">
+        <div className="flex w-full max-w-xl flex-col items-center text-center">
             {/*
                 flex: flexbox
                 w-full: 幅100%
@@ -18,8 +18,6 @@ export const HeroProfile = ({ name, role, avatarSrc, githubUrl, xUrl }: HeroProf
                 flex-col: 縦並び
                 items-center: 縦軸中央揃え
                 text-center: テキスト中央揃え
-                lg:items-start: lgで上揃え
-                lg:text-left: lgでテキスト左揃え
             */}
             <img
                 src={avatarSrc}
@@ -59,7 +57,7 @@ export const HeroProfile = ({ name, role, avatarSrc, githubUrl, xUrl }: HeroProf
                         />
                     </svg>
                 </SocialLink>
-                <SocialLink href={xUrl} label="X">
+                <SocialLink href={xUrl}>
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         {/* w-5/h-5: 幅/高さ1.25rem */}
                         <path

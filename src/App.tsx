@@ -1,5 +1,4 @@
 import icon from "@/assets/icon.png";
-// import {BreakoutPanel} from "@/presentations/components/BreakoutPanel";
 import {Header} from "@/presentations/components/Header";
 import {HeroProfile} from "@/presentations/components/HeroProfile";
 
@@ -27,8 +26,6 @@ function App() {
                             githubUrl="https://github.com/VeyronSakai"
                             xUrl="https://x.com/VeyronSakai"
                         />
-
-                        {/*<BreakoutPanel/>*/}
                     </div>
                 </section>
             </main>
