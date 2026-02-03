@@ -30,7 +30,8 @@ export const SocialLink = ({href, label, children}: SocialLinkProps) => {
             */}
             {children}
 
-            <span>{label}</span>
+            {/* label に値が入っている場合のみ表示する*/}
+            {label && <span>{label}</span>}
         </a>
     );
 };
