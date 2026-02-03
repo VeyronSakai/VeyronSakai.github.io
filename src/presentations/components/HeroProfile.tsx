@@ -1,4 +1,5 @@
 import {SocialLink} from "@/presentations/components/SocialLink";
+import ProfileAvatar from "@/presentations/components/ProfileAvatar.tsx";
 
 type HeroProfileProps = {
     name: string;
@@ -35,21 +36,9 @@ export const HeroProfile = ({
                 items-center: 縦軸中央揃え
                 text-center: テキスト中央揃え
             */}
-            <img
-                src={avatarSrc}
-                alt={name}
-                className="w-40 h-40 rounded-full object-cover border-4 border-indigo-500/50 shadow-lg shadow-indigo-500/20 mb-8"
-            />
-            {/*
-                w-40/h-40: 幅/高さ10rem
-                rounded-full: 円形
-                object-cover: 画像をトリミングして覆う
-                border-4: 枠線4px
-                border-indigo-500/50: 枠線色 indigo-500 50%不透明
-                shadow-lg: 大きめ影
-                shadow-indigo-500/20: 影色 indigo-500 20%不透明
-                mb-8: 下マージン2rem
-            */}
+
+            <ProfileAvatar avatarSrc={avatarSrc} name={name}/>
+
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">{name}</h1>
             {/* text-4xl: 文字サイズ大, md:text-5xl: mdでさらに大, font-bold: 太字, text-white: 文字色白, mb-4: 下マージン1rem */}
             <p className="text-lg text-slate-400 mb-8">{role}</p>
