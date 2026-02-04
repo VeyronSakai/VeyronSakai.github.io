@@ -3,7 +3,7 @@ import type {ReactNode} from "react";
 type SocialLinkProps = {
     href: string;
     label?: string;
-    children: ReactNode;
+    children?: ReactNode;
 };
 
 export const SocialLink = ({href, label, children}: SocialLinkProps) => {
