@@ -1,5 +1,5 @@
 import {breakoutConfig} from "@/domains/breakouts/config";
-import {useBreakoutGame} from "@/useCases/breakouts/useBreakoutGame";
+import {useBreakoutGame} from "@/use-cases/breakouts/useBreakoutGame";
 
 export const BreakoutPanel = () => {
     const {canvasRef, score, statusLabel} = useBreakoutGame();

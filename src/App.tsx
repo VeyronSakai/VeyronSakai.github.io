@@ -1,8 +1,12 @@
 import icon from "@/assets/icon.png";
 import {Header} from "@/presentations/components/Header";
 import {HeroProfile} from "@/presentations/components/HeroProfile";
+import {useLanguage} from "@/use-cases/i18n/useLanguage";
 
 function App() {
+    // 言語切替に応じて翻訳テーブルが入れ替わる。
+    const {translations} = useLanguage();
+
     return (
         <div className="min-h-screen bg-slate-900 text-slate-200">
             {/*
@@ -20,11 +24,11 @@ function App() {
                     {/* flex: flexbox, flex-col: 縦並び, items-center: 縦軸中央揃え, gap-12: 間隔3rem, lg:flex-row: lgで横並び, lg:items-start: lgで上揃え, lg:justify-between: lgで両端揃え */}
                     <div className="flex flex-col items-center gap-12">
                         <HeroProfile
-                            name="Yuki Sakai"
-                            role="Software Engineer"
+                            name={translations.hero.name}
+                            role={translations.hero.role}
                             avatarSrc={icon}
-                            location="日本"
-                            gender="男性"
+                            location={translations.profile.location}
+                            gender={translations.profile.gender}
                             skills={["Unity", "C#", "TypeScript", "React", "Go", "Rust"]}
                             githubUrl="https://github.com/VeyronSakai"
                             xUrl="https://x.com/VeyronSakai"

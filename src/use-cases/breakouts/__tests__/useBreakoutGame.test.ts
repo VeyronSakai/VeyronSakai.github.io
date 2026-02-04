@@ -1,5 +1,5 @@
 import { renderHook } from "@testing-library/react";
-import { useBreakoutGame } from "@/useCases/breakouts/useBreakoutGame";
+import { useBreakoutGame } from "@/use-cases/breakouts/useBreakoutGame";
 
 describe("useBreakoutGame", () => {
     it("exposes initial status and score", () => {
