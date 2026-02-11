@@ -2,14 +2,15 @@ import type {ReactNode} from "react";
 import {useEffect, useMemo, useState} from "react";
 import {translations, type Language} from "@/domains/i18n/translations";
 import {languageContext, type LanguageContextValue} from "@/domains/i18n/languageContexts";
+import {detectLanguage} from "@/domains/i18n/detectLanguage";
 
 type LanguageProviderProps = {
     children: ReactNode;
 };
 
 export const LanguageProvider = ({children}: LanguageProviderProps) => {
-    // 現在の言語状態。更新すると Provider 配下が再描画される。
-    const [language, setLanguage] = useState<Language>("ja");
+    // ブラウザの言語設定から初期言語を決定する。
+    const [language, setLanguage] = useState<Language>(detectLanguage);
 
     // HTML の lang 属性も同期してアクセシビリティ/検索向けに明示。
     useEffect(() => {
