@@ -2,8 +2,6 @@
 
 This Privacy Policy describes how Yuki Sakai ("the Developer") handles user information in the app "Tap Hunt" ("the App").
 
-> **Note:** This is a template. Be sure to revise it to match your actual data collection (analytics/ads SDKs in use, contact email, etc.) before publishing.
-
 ## 1. Information We Collect
 
 The Developer does not directly collect personally identifiable information through the App. However, the following information may be collected automatically:
@@ -38,4 +36,4 @@ This Policy may be changed without notice. Any changes take effect when posted o
 
 For inquiries regarding this Policy, please contact:
 
-- Contact: `<enter your contact email here>`
+- Contact: yuukisakai123@gmail.com
