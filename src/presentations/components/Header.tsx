@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 import {useLanguage} from "@/use-cases/i18n/useLanguage";
 
 type HeaderProps = {
@@ -25,8 +26,11 @@ export const Header = ({logoSrc}: HeaderProps) => {
                 {/* max-w-full: 最大幅100%, mx-auto: 中央寄せ, px-6: 左右パディング1.5rem, py-4: 上下パディング1rem */}
                 <div className="flex items-center justify-between">
                     {/* flex: flexbox, items-center: 縦軸中央揃え, justify-between: 両端揃え */}
-                    <img src={logoSrc} alt="Logo" className="w-10 h-10 rounded-full object-cover"/>
-                    {/* w-10/h-10: 幅/高さ2.5rem, rounded-full: 円形, object-cover: 画像をトリミングして覆う */}
+                    {/* ロゴクリックでトップへ戻る */}
+                    <Link to="/" aria-label="Home">
+                        <img src={logoSrc} alt="Logo" className="w-10 h-10 rounded-full object-cover"/>
+                        {/* w-10/h-10: 幅/高さ2.5rem, rounded-full: 円形, object-cover: 画像をトリミングして覆う */}
+                    </Link>
                     <nav className="flex items-center gap-8">
                         {/* flex: flexbox, items-center: 縦軸中央揃え, gap-8: 間隔2rem */}
                         <button

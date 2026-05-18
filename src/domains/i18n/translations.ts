@@ -14,6 +14,12 @@ export type Translations = {
         location: string;
         gender: string;
     };
+    privacy: {
+        lastUpdatedLabel: string;
+        notFoundTitle: string;
+        notFoundBody: string;
+        homeLink: string;
+    };
 };
 
 export const translations: Record<Language, Translations> = {
@@ -30,6 +36,12 @@ export const translations: Record<Language, Translations> = {
             location: "日本",
             gender: "男性",
         },
+        privacy: {
+            lastUpdatedLabel: "最終更新日",
+            notFoundTitle: "ページが見つかりません",
+            notFoundBody: "お探しのプライバシーポリシーは存在しないか、移動しました。",
+            homeLink: "ホームへ",
+        },
     },
     en: {
         header: {
@@ -43,6 +55,12 @@ export const translations: Record<Language, Translations> = {
         profile: {
             location: "Japan",
             gender: "Male",
+        },
+        privacy: {
+            lastUpdatedLabel: "Last updated",
+            notFoundTitle: "Page not found",
+            notFoundBody: "The privacy policy you are looking for does not exist or has moved.",
+            homeLink: "Home",
         },
     },
 };
