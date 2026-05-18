@@ -13,7 +13,7 @@ export type PrivacyGame = {
 export const privacyGames: PrivacyGame[] = [
     {
         slug: "tap-hunt",
-        title: {ja: "タップハント", en: "Tap Hunt"},
+        title: {ja: "Tap Hunt", en: "Tap Hunt"},
         lastUpdated: "2026-05-18",
     },
 ];
