@@ -15,8 +15,8 @@
 
 本アプリは、解析および広告配信のために以下の第三者サービスを利用する場合があります。これらのサービスは独自のプライバシーポリシーに従って情報を取り扱います。
 
-- 解析: （例）Google Analytics for Firebase
-- 広告: （例）Google AdMob
+- 解析: Google Analytics for Firebase
+- 広告: Google AdMob
 
 ## 3. 情報の利用目的
 

@@ -15,8 +15,8 @@ The Developer does not directly collect personally identifiable information thro
 
 The App may use the following third-party services for analytics and advertising. These services handle information in accordance with their own privacy policies.
 
-- Analytics: (e.g.) Google Analytics for Firebase
-- Advertising: (e.g.) Google AdMob
+- Analytics: Google Analytics for Firebase
+- Advertising: Google AdMob
 
 ## 3. How We Use Information
 
