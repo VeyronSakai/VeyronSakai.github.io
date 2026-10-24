@@ -16,6 +16,11 @@ export const privacyGames: PrivacyGame[] = [
         title: {ja: "Tap Hunt", en: "Tap Hunt"},
         lastUpdated: "2026-05-18",
     },
+    {
+        slug: "red-frontier",
+        title: {ja: "RED FRONTIER", en: "RED FRONTIER"},
+        lastUpdated: "2026-10-25",
+    },
 ];
 
 // slug から該当ゲームを引く。未登録なら undefined。
