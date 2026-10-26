@@ -30,4 +30,4 @@
 
 本アプリおよび本ポリシーに関するお問い合わせは、以下までご連絡ください。
 
-- 連絡先: yuukisakai12345@gmail.com
+- 連絡先: yuukisakai123@gmail.com

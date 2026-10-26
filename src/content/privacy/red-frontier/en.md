@@ -30,4 +30,4 @@ This Policy may be changed without notice. Any changes take effect when posted o
 
 For inquiries regarding the App or this Policy, please contact:
 
-- Contact: yuukisakai12345@gmail.com
+- Contact: yuukisakai123@gmail.com
