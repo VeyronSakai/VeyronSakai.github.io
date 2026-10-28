@@ -21,6 +21,11 @@ export const privacyGames: PrivacyGame[] = [
         title: {ja: "RED FRONTIER", en: "RED FRONTIER"},
         lastUpdated: "2026-10-25",
     },
+    {
+        slug: "past-the-last-train",
+        title: {ja: "終電の先", en: "Past the Last Train"},
+        lastUpdated: "2026-10-28",
+    },
 ];
 
 // slug から該当ゲームを引く。未登録なら undefined。
