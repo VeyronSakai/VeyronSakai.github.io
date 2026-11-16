@@ -31,3 +31,5 @@ Esta Política pode ser alterada sem aviso prévio. As alterações entram em vi
 Em caso de dúvidas sobre o App ou esta Política, entre em contato:
 
 - Contato: yuukisakai123@gmail.com
+
+Esta Política foi redigida originalmente em japonês. Em caso de divergência entre a versão em japonês e esta tradução, prevalecerá a versão em japonês.

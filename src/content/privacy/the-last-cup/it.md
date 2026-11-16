@@ -31,3 +31,5 @@ La presente informativa può essere modificata senza preavviso. Le modifiche han
 Per domande relative all'App o alla presente informativa, scrivi a:
 
 - Contatto: yuukisakai123@gmail.com
+
+La presente informativa è stata redatta originariamente in giapponese. In caso di discrepanze tra la versione giapponese e la presente traduzione, prevale la versione giapponese.

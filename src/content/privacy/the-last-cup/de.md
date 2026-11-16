@@ -31,3 +31,5 @@ Diese Datenschutzerklärung kann ohne Vorankündigung geändert werden. Änderun
 Bei Fragen zur App oder zu dieser Datenschutzerklärung wenden Sie sich bitte an:
 
 - Kontakt: yuukisakai123@gmail.com
+
+Diese Datenschutzerklärung wurde ursprünglich auf Japanisch verfasst. Bei Abweichungen zwischen der japanischen Fassung und dieser Übersetzung ist die japanische Fassung maßgeblich.

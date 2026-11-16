@@ -31,3 +31,5 @@ Esta política puede modificarse sin previo aviso. Los cambios entran en vigor e
 Para cualquier consulta sobre la Aplicación o esta política, ponte en contacto con:
 
 - Contacto: yuukisakai123@gmail.com
+
+Esta política se redactó originalmente en japonés. En caso de discrepancia entre la versión japonesa y esta traducción, prevalecerá la versión japonesa.

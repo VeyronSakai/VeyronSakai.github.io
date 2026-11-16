@@ -31,3 +31,5 @@ La présente politique peut être modifiée sans préavis. Toute modification pr
 Pour toute question concernant l'Application ou la présente politique, veuillez nous contacter :
 
 - Contact : yuukisakai123@gmail.com
+
+La présente politique a été rédigée à l'origine en japonais. En cas de divergence entre la version japonaise et la présente traduction, la version japonaise prévaut.
