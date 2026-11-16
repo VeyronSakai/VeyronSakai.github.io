@@ -1,5 +1,6 @@
+import {languages} from "@/domains/i18n/translations";
 import {privacyGames} from "@/domains/privacy/games";
-import {contentSlugs, getPrivacyBody} from "@/domains/privacy/privacyContent";
+import {contentEntries, getPrivacyBody} from "@/domains/privacy/privacyContent";
 
 describe("privacy games registry", () => {
     const slugs = privacyGames.map((game) => game.slug);
@@ -18,19 +19,25 @@ describe("privacy games registry", () => {
         }
     });
 
-    it("ships non-empty ja and en markdown for every game", () => {
-        for (const slug of slugs) {
-            for (const language of ["ja", "en"] as const) {
-                const body = getPrivacyBody(slug, language);
-                expect(body, `${slug}:${language} markdown`).toBeTruthy();
-                expect((body ?? "").trim().length).toBeGreaterThan(0);
+    it("ships non-empty markdown exactly for the languages that have a title", () => {
+        for (const game of privacyGames) {
+            for (const language of languages) {
+                const body = getPrivacyBody(game.slug, language);
+                const label = `${game.slug}:${language} markdown`;
+                if (game.title[language]) {
+                    expect(body, label).toBeTruthy();
+                    expect((body ?? "").trim().length, label).toBeGreaterThan(0);
+                } else {
+                    expect(body, label).toBeUndefined();
+                }
             }
         }
     });
 
-    it("has no orphan content folder without a registry entry", () => {
-        for (const slug of contentSlugs) {
+    it("has no orphan content without a registry entry or a supported language", () => {
+        for (const {slug, language} of contentEntries) {
             expect(slugs, `orphan content slug: ${slug}`).toContain(slug);
+            expect(languages, `unsupported content language: ${slug}:${language}`).toContain(language);
         }
     });
 });

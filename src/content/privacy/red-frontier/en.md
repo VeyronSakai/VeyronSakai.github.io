@@ -31,3 +31,5 @@ This Policy may be changed without notice. Any changes take effect when posted o
 For inquiries regarding the App or this Policy, please contact:
 
 - Contact: yuukisakai123@gmail.com
+
+This Policy was originally written in Japanese. If there is any discrepancy between the Japanese version and this translation, the Japanese version prevails.
