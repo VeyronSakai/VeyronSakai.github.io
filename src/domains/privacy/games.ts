@@ -16,7 +16,7 @@ export const privacyGames: PrivacyGame[] = [
     {
         slug: "tap-hunt",
         title: {ja: "Tap Hunt", en: "Tap Hunt"},
-        lastUpdated: "2026-05-18",
+        lastUpdated: "2026-11-16",
     },
     {
         slug: "red-frontier",
@@ -32,7 +32,7 @@ export const privacyGames: PrivacyGame[] = [
             it: "RED FRONTIER",
             "pt-BR": "RED FRONTIER",
         },
-        lastUpdated: "2026-10-25",
+        lastUpdated: "2026-11-16",
     },
     {
         slug: "past-the-last-train",
@@ -48,7 +48,7 @@ export const privacyGames: PrivacyGame[] = [
             it: "Oltre l'ultimo treno",
             "pt-BR": "Depois do Último Trem",
         },
-        lastUpdated: "2026-10-28",
+        lastUpdated: "2026-11-16",
     },
     {
         slug: "the-last-cup",
@@ -64,7 +64,7 @@ export const privacyGames: PrivacyGame[] = [
             it: "L'ultimo caffè",
             "pt-BR": "A Última Xícara",
         },
-        lastUpdated: "2026-11-11",
+        lastUpdated: "2026-11-16",
     },
 ];
 
