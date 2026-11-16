@@ -11,16 +11,17 @@ const modules = import.meta.glob("../../content/privacy/*/*.md", {
 // "<slug>:<lang>" をキーに本文を保持する。
 const bodies = new Map<string, string>();
 for (const [path, raw] of Object.entries(modules)) {
-    const matched = path.match(/\/content\/privacy\/([^/]+)\/(ja|en)\.md$/);
+    const matched = path.match(/\/content\/privacy\/([^/]+)\/([^/]+)\.md$/);
     if (matched) {
         bodies.set(`${matched[1]}:${matched[2]}`, raw);
     }
 }
 
-// レジストリ整合性テスト用に、Markdown が存在する slug 一覧を公開する。
-export const contentSlugs = new Set(
-    [...bodies.keys()].map((key) => key.split(":")[0]),
-);
+// レジストリ整合性テスト用に、Markdown が存在する slug と言語の組を公開する。
+export const contentEntries = [...bodies.keys()].map((key) => {
+    const [slug, language] = key.split(":");
+    return {slug, language};
+});
 
 export const getPrivacyBody = (
     slug: string,

@@ -1,5 +1,6 @@
 import {Link} from "react-router-dom";
 import {useLanguage} from "@/use-cases/i18n/useLanguage";
+import {languageNames, languages, type Language} from "@/domains/i18n/translations";
 
 type HeaderProps = {
     logoSrc: string;
@@ -8,7 +9,6 @@ type HeaderProps = {
 export const Header = ({logoSrc}: HeaderProps) => {
     // 現在の言語と翻訳テーブルを取得。言語が変わると再描画される。
     const {language, setLanguage, translations} = useLanguage();
-    const isJapanese = language === "ja";
 
     return (
         <header
@@ -31,45 +31,35 @@ export const Header = ({logoSrc}: HeaderProps) => {
                         <img src={logoSrc} alt="Logo" className="w-10 h-10 rounded-full object-cover"/>
                         {/* w-10/h-10: 幅/高さ2.5rem, rounded-full: 円形, object-cover: 画像をトリミングして覆う */}
                     </Link>
-                    <nav className="flex items-center gap-8">
-                        {/* flex: flexbox, items-center: 縦軸中央揃え, gap-8: 間隔2rem */}
-                        <button
-                            type="button"
-                            onClick={() => setLanguage("ja")}
-                            className={`text-sm font-medium transition-colors duration-300 ${
-                                isJapanese ? "text-indigo-400" : "text-slate-300 hover:text-indigo-400"
-                            }`}
-                            aria-pressed={isJapanese}
-                        >
-                            {/*
-                                text-sm: 文字サイズ小
-                                font-medium: 中太字
-                                text-slate-300: 文字色 slate-300
-                                hover:text-indigo-400: ホバー時文字色 indigo-400
-                                transition-colors: 色変化をアニメーション
-                                duration-300: 300ms
-                            */}
-                            {translations.header.japanese}
-                        </button>
-                        <button
-                            type="button"
-                            onClick={() => setLanguage("en")}
-                            className={`text-sm font-medium transition-colors duration-300 ${
-                                !isJapanese ? "text-indigo-400" : "text-slate-300 hover:text-indigo-400"
-                            }`}
-                            aria-pressed={!isJapanese}
-                        >
-                            {/*
-                                text-sm: 文字サイズ小
-                                font-medium: 中太字
-                                text-slate-300: 文字色 slate-300
-                                hover:text-indigo-400: ホバー時文字色 indigo-400
-                                transition-colors: 色変化をアニメーション
-                                duration-300: 300ms
-                            */}
-                            {translations.header.english}
-                        </button>
-                    </nav>
+                    {/* 言語が多く横に並べきれないので、選択肢から選ばせる。選択肢は languages の順で、その言語自身の名前で出す。 */}
+                    <select
+                        value={language}
+                        onChange={(event) => setLanguage(event.target.value as Language)}
+                        aria-label={translations.header.languageLabel}
+                        className="rounded-md border border-slate-700 bg-slate-800 px-3 py-1.5 text-sm font-medium text-slate-200 transition-colors duration-300 hover:border-indigo-400 focus:border-indigo-400 focus:outline-none"
+                    >
+                        {/*
+                            rounded-md: 角丸中
+                            border: 枠線
+                            border-slate-700: 枠線色 slate-700
+                            bg-slate-800: 背景色 slate-800
+                            px-3: 左右パディング0.75rem
+                            py-1.5: 上下パディング0.375rem
+                            text-sm: 文字サイズ小
+                            font-medium: 中太字
+                            text-slate-200: 文字色 slate-200
+                            transition-colors: 色変化をアニメーション
+                            duration-300: 300ms
+                            hover:border-indigo-400: ホバー時枠線色 indigo-400
+                            focus:border-indigo-400: フォーカス時枠線色 indigo-400
+                            focus:outline-none: フォーカス時の既定の枠を消す
+                        */}
+                        {languages.map((option) => (
+                            <option key={option} value={option} lang={option}>
+                                {languageNames[option]}
+                            </option>
+                        ))}
+                    </select>
                 </div>
             </div>
         </header>

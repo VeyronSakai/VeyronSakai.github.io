@@ -1,5 +1,5 @@
 import {useEffect} from "react";
-import {useParams} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 import {useLanguage} from "@/use-cases/i18n/useLanguage";
 import {usePrivacyGame} from "@/use-cases/privacy/usePrivacyGame";
 import {PrivacyLayout} from "@/presentations/privacy/PrivacyLayout";
@@ -37,7 +37,19 @@ const PrivacyPolicyPage = () => {
                 </p>
             </header>
 
-            <MarkdownArticle body={resolved.body}/>
+            {/* ゲームが今の言語に対応せず英語の本文を出すときに、読み上げや翻訳が本文の言語を取り違えないよう、本文の言語を示す。 */}
+            <div lang={resolved.language}>
+                <MarkdownArticle body={resolved.body}/>
+            </div>
+
+            {/* ストアのサポートとプライバシーのリンクがこのページを指すので、ここからガイドラインへたどれるようにする。ポリシーの本文には含めない。 */}
+            {/* mt-12: 上マージン3rem, border-t: 上線, border-slate-700/50: 枠線色, pt-6: 上パディング1.5rem */}
+            <footer className="mt-12 border-t border-slate-700/50 pt-6">
+                {/* text-indigo-400: 文字色 indigo-400, hover:underline: ホバー時下線 */}
+                <Link to="/lets-play" className="text-indigo-400 hover:underline">
+                    {translations.letsPlay.title}
+                </Link>
+            </footer>
         </PrivacyLayout>
     );
 };

@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 import icon from "@/assets/icon.png";
 import {Header} from "@/presentations/components/Header";
 import {HeroProfile} from "@/presentations/components/HeroProfile";
@@ -36,6 +37,10 @@ const Home = () => {
                             zennUrl="https://zenn.dev/veryon_sakai"
                             qiitaUrl="https://qiita.com/VeyronSakai"
                         />
+                        {/* text-sm: 文字サイズ小, text-indigo-400: 文字色 indigo-400, hover:underline: ホバー時下線 */}
+                        <Link to="/lets-play" className="text-sm text-indigo-400 hover:underline">
+                            {translations.letsPlay.title}
+                        </Link>
                     </div>
                 </section>
             </main>

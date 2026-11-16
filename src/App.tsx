@@ -1,6 +1,7 @@
 import {Route, Routes} from "react-router-dom";
 import Home from "@/presentations/pages/Home";
 import PrivacyPolicyPage from "@/presentations/pages/PrivacyPolicyPage";
+import LetsPlayPage from "@/presentations/pages/LetsPlayPage";
 import NotFoundPage from "@/presentations/pages/NotFoundPage";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/privacy/:slug" element={<PrivacyPolicyPage/>}/>
+            <Route path="/lets-play" element={<LetsPlayPage/>}/>
             <Route path="*" element={<NotFoundPage/>}/>
         </Routes>
     );
