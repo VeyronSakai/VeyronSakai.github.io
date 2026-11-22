@@ -66,6 +66,22 @@ export const privacyGames: PrivacyGame[] = [
         },
         lastUpdated: "2026-11-16",
     },
+    {
+        slug: "escape-from-the-cats-atelier",
+        title: {
+            ja: "猫のアトリエからの脱出",
+            en: "Escape from the Cat's Atelier",
+            "zh-Hans": "逃离猫咪画室",
+            "zh-Hant": "逃離貓咪畫室",
+            ko: "고양이 아틀리에 탈출",
+            fr: "Évasion de l'atelier du chat",
+            de: "Flucht aus dem Katzenatelier",
+            es: "Escapa del taller del gato",
+            it: "Fuga dall'atelier del gatto",
+            "pt-BR": "Fuga do ateliê do gato",
+        },
+        lastUpdated: "2026-11-22",
+    },
 ];
 
 // slug から該当ゲームを引く。未登録なら undefined。
