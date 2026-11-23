@@ -1,6 +1,6 @@
 # Privacy Policy
 
-This Privacy Policy describes how Yuki Sakai ("the Developer") handles user information in the app "Escape from the Cat's Atelier" ("the App").
+This Privacy Policy describes how Yuki Sakai ("the Developer") handles user information in the app "The Cat's Atelier" ("the App").
 
 ## 1. Information the Developer Collects
 

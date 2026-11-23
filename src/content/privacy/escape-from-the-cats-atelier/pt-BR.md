@@ -1,6 +1,6 @@
 # Política de Privacidade
 
-Esta Política de Privacidade descreve como Yuki Sakai ("o Desenvolvedor") trata as informações dos usuários no app "Fuga do ateliê do gato" ("o App").
+Esta Política de Privacidade descreve como Yuki Sakai ("o Desenvolvedor") trata as informações dos usuários no app "O ateliê do gato" ("o App").
 
 ## 1. Informações coletadas pelo Desenvolvedor
 
