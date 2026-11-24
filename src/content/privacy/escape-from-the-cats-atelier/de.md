@@ -1,6 +1,6 @@
 # Datenschutzerklärung
 
-Diese Datenschutzerklärung beschreibt, wie Yuki Sakai („der Entwickler“) mit Nutzerinformationen in der App „Flucht aus dem Katzenatelier“ („die App“) umgeht.
+Diese Datenschutzerklärung beschreibt, wie Yuki Sakai („der Entwickler“) mit Nutzerinformationen in der App „Das Katzenatelier“ („die App“) umgeht.
 
 ## 1. Vom Entwickler erhobene Informationen
 

@@ -1,6 +1,6 @@
 # Politique de confidentialité
 
-La présente politique de confidentialité décrit la manière dont Yuki Sakai (« le Développeur ») traite les informations des utilisateurs dans l'application « Évasion de l'atelier du chat » (« l'Application »).
+La présente politique de confidentialité décrit la manière dont Yuki Sakai (« le Développeur ») traite les informations des utilisateurs dans l'application « Atelier du chat » (« l'Application »).
 
 ## 1. Informations collectées par le Développeur
 

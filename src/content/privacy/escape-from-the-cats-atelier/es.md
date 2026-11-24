@@ -1,6 +1,6 @@
 # Política de privacidad
 
-Esta política de privacidad describe cómo Yuki Sakai («el Desarrollador») trata la información de los usuarios en la aplicación «Escapa del taller del gato» («la Aplicación»).
+Esta política de privacidad describe cómo Yuki Sakai («el Desarrollador») trata la información de los usuarios en la aplicación «Taller del gato» («la Aplicación»).
 
 ## 1. Información que recopila el Desarrollador
 

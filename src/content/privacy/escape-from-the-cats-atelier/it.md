@@ -1,6 +1,6 @@
 # Informativa sulla privacy
 
-La presente informativa sulla privacy descrive come Yuki Sakai («lo Sviluppatore») tratta le informazioni degli utenti nell'app «Fuga dall'atelier del gatto» («l'App»).
+La presente informativa sulla privacy descrive come Yuki Sakai («lo Sviluppatore») tratta le informazioni degli utenti nell'app «Atelier del gatto» («l'App»).
 
 ## 1. Informazioni raccolte dallo Sviluppatore
 
